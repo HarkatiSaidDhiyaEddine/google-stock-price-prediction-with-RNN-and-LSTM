@@ -1,18 +1,7 @@
 # GOOGL next-day price prediction with a stacked LSTM
 
 Next-day forecasting of the Alphabet (GOOGL) closing price from `data/GOOGL.csv`
-(4,431 trading days, 2004-08-19 → 2022-03-24), using the four-layer LSTM from the
-original tutorial, rebuilt as a tested Python package instead of one notebook.
-
-**The honest result, up front:** un-shuffling the split cures the original
-constant-output bug, and the predicted prices now track the market. But the LSTM does
-**not** beat "tomorrow's price = today's price" by any margin worth having. The
-price-level target loses to it by a factor of 21; the single apparent win is **0.25%
-of RMSE** on the log-return target, where the directional accuracy is **0.5586
-against an up-day share of 0.5586** — exactly what a forecast that always answers
-"up" would score. Every number below is reported next to the naive baseline that
-makes it interpretable.
-
+(4,431 trading days, 2004-08-19 → 2022-03-24), using the four-layer LSTM 
 ---
 
 ## 3. How to run
