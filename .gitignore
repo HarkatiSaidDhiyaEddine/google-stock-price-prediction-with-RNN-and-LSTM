@@ -1,0 +1,16 @@
+# Model checkpoints (large, regenerable)
+models/*.keras
+models/*.h5
+
+# Generated figures (regenerable via run_pipeline.py or the notebooks)
+figures/*.png
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+# OS
+Thumbs.db
+.DS_Store
